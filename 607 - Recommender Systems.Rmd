@@ -1,0 +1,40 @@
+---
+title: "Recommender systems"
+author: "Robert_M"
+date: "December 5, 2018"
+output: html_document
+---
+#Your task is to analyze an existing recommender system that you find interesting. You should:
+
+1	Perform a Scenario Design analysis as described below. Consider whether it makes sense for your selected recommender system to perform scenario design twice, once for the organization (e.g. Amazon.com) and once for the organizations customers.
+
+2	Attempt to reverse engineer what you can about the site, from the site interface and any available information that you can find on the Internet or elsewhere.
+
+3	Include specific recommendations about how to improve the sites recommendation capabilities going forward.
+
+4	Create your report using an R Markdown file, and create a discussion thread with a link to the GitHub repo where your Markdown file notebook resides. You are not expected to need to write code for this discussion assignment.
+
+#Netflix 
+Perhaps the most famous recommender system is the entertainment content company Netflix.   One reason for the notoriety surrounding the Netflix recommender system is the one million dollar recommender optimization contest launched in October of 2006 and not completed until October of 2009:  https://www.thrillist.com/entertainment/nation/the-netflix-prize. The contest was to see if a person or team of people could increase the recommender engines efficiency by 10%.  While the company may be famous for this contest and the improvement of their system there are a couple of interesting things to note. One, another team had a chance to tie the winning group, but a lost internet connection scuttled the opportunity.  Next, while the winning team got the $1,000,000 prize the team was part of Bell Labs and gave the winnings to charity.  Its probably for the best as Netflix never implemented the winning algorithm.  They had gotten so much valuable code, they internally used some of the code receive in the beginning of the contest to move forward.  And finally, the company has moved on from the contest and the original recommender system as Netflix business model has changed.  While the company was in the movie leasing business, they are now entrenched as a media streaming company.  This now informs the new and current recommender system I we will discuss:  
+
+##Scenario Design analysis: 
+> **Who are your target users?** 
+Mass audiences both here in America and abroad.  Anyone who is looking to be entertained or informed should find content.  There are no restrictions based on age or gender, as Netflix does not take this into account. 
+
+> **What are their key goals?**
+The target users want to the recommender system to quickly and effortlessly find entertainment options when logging on to the Netflix portal.  
+
+> **How can you help them accomplish those goals?**
+By creating an easy to use and user-friendly portal.  Making the portal intuitive and customized to the users expectations and likes.   
+Reverse engineering: 
+
+##The Netflix Recommender user portal works on by using the following criteria for optimization.  
+-	**A/B Testing**  Different interfaces for different users, optimized for the best use.
+-	**Landing Cards**  Different title cards for shows to watch, optimized for the best use.  
+-	**Recommended Shows**  Use user ratings, optimized for the best use.
+-	**Timing**  Different programming for different times of the day, optimized for the best use.
+As the old system was based on users giving user ratings, now with streaming Netflix has a trove of information.  While the system still uses explicit recommendations in the form of ratings for shows, the system makes use of most of its recommendations implicitly, in the form of user behavior.  It should be noted that the historical form of categorizations via age and gender is not used by Netflix.  The company does not see the use for such categorizations.  
+https://www.wired.co.uk/article/netflix-data-personalisation-watching
+
+##Recommendations on improvements: 
+There isnt much I can add as Netflix may have done more for recommender systems than any company in history.  One thing the article brought up, is that the landing cards, should go to video landing cards instead of static.  As the article is from August 2018, they now do that.  One thing I like about the Netflix system that they could expound on is, having different user profiles for the same account.   
